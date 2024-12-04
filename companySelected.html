@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="mytheme">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+    
+    <title>Port Contact</title>
+    <!--<title>Port Contact</title>-->
+</head>
+<body>
+
+    <div class="header-second">
+        <header>
+            <div class="container">
+                <div class="navbar px-0 relative z-[20] lg:py-[16px] py-[12px] bg-transparent bg-base-100">
+                    <div class="navbar-start">
+                        <a href="#" class="flex items-center gap-[8px] text-white">
+                            <div class="logo"></div>
+                            <div class="text-[18px] font-bold logo-text">Port Contact</div>
+                        </a>
+        
+                        <div class="hidden lg:flex border-l border-[#E5E5EB] ml-[32px] pl-[32px] h-[32px]">
+                            <ul class="menu space-x-[30px] menu-horizontal px-1">
+                                <li><a class="navbar-link">Home</a></li>
+                                <li><a class="navbar-link">About Us</a></li>
+                                <li>
+                                    <details>
+                                        <summary class="navbar-link">Countries</summary>
+                                        <ul class="p-2 space-y-[2px] max-h-[70vh] overflow-y-auto  scrollbar scrollbar-thin scrollbar-thumb-[#9898AA] scrollbar-track-transparent">
+                                            <li class="p-[15px]">
+                                                <label class="input input-bordered flex items-center gap-2">
+                                                    <input id="navSearch" type="text" class="grow" placeholder="Search" />
+                                                    <button>
+                                                        <svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 16 16"
+                                                                fill="currentColor"
+                                                                class="h-4 w-4 opacity-70">
+                                                            <path
+                                                                    fill-rule="evenodd"
+                                                                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                                                                    clip-rule="evenodd" />
+                                                        </svg>
+                                                    </button>
+                                                </label>
+                                            </li>
+                                            <li><a class="search-navSearch" href="#">All countries</a> </li>
+                                            <li><a class="search-navSearch" href="#">Benin republic</a> </li>
+                                            <li><a class="search-navSearch" href="#">Togo</a></li>
+                                            <li><a class="search-navSearch" href="#">Senegal</a></li>
+                                            <li><a class="search-navSearch" href="#">Mauritius</a></li>
+                                            <li><a class="search-navSearch" href="#">Marocco</a></li>
+                                            <li><a class="search-navSearch" href="#">Angola</a></li>
+                                            <li><a class="search-navSearch" href="#">Namibia</a></li>
+                                            <li><a class="search-navSearch" href="#">Cameroon</a></li>
+                                            <li><a class="search-navSearch" href="#">Congo</a></li>
+                                            <li><a class="search-navSearch" href="#">South africa</a> </li>
+                                            <li><a class="search-navSearch" href="#">Ghana</a></li>
+                                            <li><a class="search-navSearch" href="#">Nigeria</a></li>
+                                            <li><a class="search-navSearch" href="#">Nigeria</a></li>
+                                            <li><a class="search-navSearch" href="#">Nigeria</a></li>
+                                            <li><a class="search-navSearch" href="#">Nigeria</a></li>
+                                            <li><a class="search-navSearch" href="#">Nigeria</a></li>
+                                            <li><a class="search-navSearch" href="#">Nigeria</a></li>
+                                            <li><a class="search-navSearch" href="#">Nigeria</a></li>
+                                            <li><a class="search-navSearch" href="#">Nigeria</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary class="navbar-link">Services</summary>
+                                        <ul class="p-2">
+                                            <li><a>Dry Dock / Shipyard</a></li>
+                                            <li><a>Diving services</a></li>
+                                            <li><a>Chandler / Provisions / Oil</a></li>
+                                            <li><a>Agent</a></li>
+                                            <li><a>Equipment/Repair</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li><a class="navbar-link">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+        
+                    <div class="navbar-end flex gap-[16px]">
+                        <button class="header-subtext xl:block hidden font-medium pr-[8px]"
+                           onclick="sendMessage.showModal()"
+                        >Advertise for us</button>
+                        <a class="btn md:flex hidden btn-primary">Find me the vendor!</a>
+                        <a class="btn md:flex hidden btn-login " onclick="login.showModal()">Login</a>
+        
+                        <div class="lg:hidden">
+                            <div class="dropdown dropdown-end  burger-drop py-[5px]">
+                                <div  role="button" class="burger-box">
+                                    <label  class="burger"></label>
+                                </div>
+                                <div class="dropdown-content burger-menu bg-white rounded-[12px] z-[1] !p-[8px] w-[328px] shadow">
+                                    <div class="md:hidden flex gap-[12px] p-[12px]">
+                                        <a class="btn btn-sm btn-primary">Find me the vendor!</a>
+                                        <a class="btn btn-sm btn-outline-orange !text-orange" onclick="login.showModal()">Login</a>
+                                    </div>
+        
+                                    <ul  class="menu ">
+                                        <!-- Sidebar content here -->
+                                        <li><a>Home</a></li>
+                                        <li><a>About Us</a></li>
+                                        <li>
+                                            <details open>
+                                                <summary>Contacts</summary>
+                                                <ul>
+                                                    <li><a>Submenu 1</a></li>
+                                                    <li><a>Submenu 2</a></li>
+                                                    <li>
+                                                        <details >
+                                                            <summary>Parent</summary>
+                                                            <ul>
+                                                                <li><a>Submenu 1</a></li>
+                                                                <li><a>Submenu 2</a></li>
+                                                            </ul>
+                                                        </details>
+                                                    </li>
+                                                </ul>
+                                            </details>
+                                        </li>
+        
+                                        <li><a>Services</a></li>
+                                        <li><a>Contacts</a></li>
+                                    </ul>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>    </div>
+
+    
+    
+    <div class="bg-darkBlue text-white py-[24px]">
+        <div class="container">
+    <!--        x4 / x3 / x2-->
+            <div class="companies-wrp x4">
+                <div class="cardCompany">
+                    <div class="smCard sm bg-white"><img src="assets/images/companies/comp_4.png" alt=""></div>
+                    <div>
+                        <b class="mb-1 nextLineDynamicLines">Naviera Del Golfo De Tehuantepec</b>
+                        <div class="cardCompany-text">Ship and drilling rig supply and maintenance company, as well as consumables
+                        </div>
+                    </div>
+                </div>
+                <div class="cardCompany">
+                    <div class="smCard sm bg-white"><img src="assets/images/companies/comp_5.png" alt=""></div>
+                    <div>
+                        <b class="mb-1 nextLineDynamicLines ">Poseidon Ship Stores</b>
+                        <div class="cardCompany-text">
+                            Comprehensive Ship Supply & services Arrangements in Sri Lanka by Ocean Maritime Ceylon
+                        </div>
+                    </div>
+                </div>
+                <div class="cardCompany">
+                    <div class="smCard sm bg-white"><img src="assets/images/companies/comp_6.png" alt=""></div>
+                    <div>
+                        <b class="mb-1 nextLineDynamicLines">Elcome International LLC</b>
+                        <div class="cardCompany-text">
+                            Container Lashing/Unlashing services Container Gate in reports both laden and empty Pre-stacking of MTY containers at port Vessel expedition
+                        </div>
+                    </div>
+                </div>
+                <div class="cardCompany">
+                    <div class="smCard sm bg-white"><img src="assets/images/companies/comp_7.png" alt=""></div>
+                    <div>
+                        <b class="mb-1 nextLineDynamicLines">Red Wing Shoe Company</b>
+                        <div class="cardCompany-text">
+                            Ship and drilling rig supply and maintenance company, as well as consumables
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="bread">
+        <li class="bread-item"><a href="#">Home</a></li>
+        <li class="bread-item"><a href="#">Services</a></li>
+        <li class="bread-item"><a href="#">Dry Dock / Shipyard</a></li>
+        <li class="bread-item"><a href="#">Selected contractor</a></li>
+    </ul>
+    
+    <div class="container">
+        <div class="info-margin info">
+            <div>
+                Dozens of leading ship managers already trust us to search for their Vendors.
+            </div>
+            <a href="#" class=" link mainSecSwiper-link !mt-[9px]">
+                Let us find the Verified Vendor for you!
+                <img src="assets/images/icons/next.svg" alt="">
+            </a>
+        </div>
+    </div>
+    
+    <div class="mainWithSidebar ">
+        <div class="md:space-y-[40px] space-y-[20px]">
+            <div class="companyPage">
+                <div class="border border-1 rounded-[8px] min-w-[140px] h-[100px] flex items-center justify-center">
+                    <img class="w-full h-auto object-cover" src="/assets/images/companies/comp_1_big.png" alt="">
+                </div>
+                <div class="w-full">
+                    <div class="h1 lg:block hidden">Contractor name in one line</div>
+                    <div class="company-footer ">
+                        <div class="company-line lg:!flex !hidden">
+                            <div class="company-tag withIconLocation">Greece</div>
+                            <div class="company-tag withIconGrid">Shipyard</div>
+                        </div>
+                        <div class="companyPage-line lg:flex-row flex-col lg:!items-center !items-start">
+                            <div class="verified">
+                                <div>Verified</div>
+                            </div>
+                            <div class=" company-starLine">
+                                <div class="starIcon"></div>
+                                <div>Starred Vendor</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+    
+            <div class="lg:hidden">
+                <h1 class="">Contractor name in one line</h1>
+                <div class="company-line">
+                    <div class="company-tag withIconLocation">Greece</div>
+                    <div class="company-tag withIconGrid">Shipyard</div>
+                </div>
+            </div>
+    
+    
+            <div class="content">
+                <img src="/assets/images/contryImage.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies mattis eros a accumsan.
+                    Donec quis facilisis quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p>Pellentesque et ullamcorper arcu, sed blandit elit. Vestibulum at sodales dui, eget volutpat justo. Orci
+                    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <h2>Heading h2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies mattis eros a accumsan.
+                    Donec quis facilisis quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p>Pellentesque et ullamcorper arcu, sed blandit elit. Vestibulum at sodales dui, eget volutpat justo. Orci
+                    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <h3>Heading h3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies mattis eros a accumsan.
+                    Donec quis facilisis quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p>Pellentesque et ullamcorper arcu, sed blandit elit. Vestibulum at sodales dui, eget volutpat justo. Orci
+                    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <h4>Heading h4</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies mattis eros a accumsan.
+                    Donec quis facilisis quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p>Pellentesque et ullamcorper arcu, sed blandit elit. Vestibulum at sodales dui, eget volutpat justo. Orci
+                    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+    
+    
+                <ul>
+                    <li>bullet point;</li>
+                    <li>bullet point;</li>
+                    <li>bullet point;</li>
+                </ul>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies mattis eros a accumsan.
+                    Donec quis facilisis quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p>Pellentesque et ullamcorper arcu, sed blandit elit. Vestibulum at sodales dui, eget volutpat justo. Orci
+                    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+    
+    
+                <ol>
+                    <li>Numbered list item.</li>
+                    <li>Numbered list item.</li>
+                    <li>Numbered list item.</li>
+                </ol>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies mattis eros a accumsan.
+                    Donec quis facilisis quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+    
+                <div class="warningInfo">
+                    Pellentesque et ullamcorper arcu, sed blandit elit. Vestibulum at sodales dui, eget volutpat justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                </div>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies mattis eros a accumsan.
+                    Donec quis facilisis quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+            <div>
+                <div class=" shadow-lg rounded-[16px] lg:p-[40px] md:p-[32px] p-[24px]">
+                    <div class="space-y-[16px]">
+                        <div class="infoItem">
+                            <div class="psText">Address</div>
+                            <div class="font-medium">Bosna i Herzegovina, Tilava, 23</div>
+                        </div>
+                        <div class="infoItem">
+                            <div class="psText">Phone</div>
+                            <a href="tel:+10405645645" class="font-medium">1 040 564 56 45</a>
+                        </div>
+                        <div class="infoItem">
+                            <div class="psText">Dock type</div>
+                            <a href="#" class="font-medium">Afloat Repairs Floating Dock Graving</a>
+                        </div>
+                        <div class="infoItem">
+                            <div class="psText">Website</div>
+                            <a href="theyardbrisbane.com" class="font-medium" target="_blank">theyardbrisbane.com</a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-[16px]">Visit contractor website</a>
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="mainWithSidebar-right">
+            <div class="sidebar space-y-[20px]">
+                <a href="#" class="mainCard">
+                    <div class="mainCard-image">
+                        <img src="assets/images/cd_1.jpg" alt="">
+                        <div class="mainCard-tag">Advertising</div>
+                    </div>
+                    <div class="mainCard-info">
+                        <div class="mainCard-title">Banner Title</div>
+                        <div class="mainCard-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis accumsan
+                            erat, imperdiet condimentum est lacinia vel. Suspendisse in ligula purus.
+                        </div>
+                    </div>
+                </a>
+                <a href="#"  class="mainCard">
+                    <div class="mainCard-image">
+                        <img src="assets/images/cd_2.jpg" alt="">
+                        <div class="mainCard-tag">Advertising</div>
+                    </div>
+                    <div class="mainCard-info">
+                        <div class="mainCard-title">Banner Title</div>
+                        <div class="mainCard-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                </a>
+                <a href="#"  class="mainCard">
+                    <div class="mainCard-image">
+                        <img src="assets/images/cd_3.jpg" alt="">
+                        <div class="mainCard-tag">Advertising</div>
+                    </div>
+                    <div class="mainCard-info">
+                        <div class="mainCard-title">Long banner title of two lines or more</div>
+                        <div class="mainCard-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis accumsan
+                            erat, imperdiet condimentum est lacinia vel. Suspendisse in ligula purus.
+                        </div>
+                    </div>
+                </a>
+                <a href="#"  class="mainCard">
+                    <div class="mainCard-image">
+                        <img src="assets/images/cd_4.jpg" alt="">
+                        <div class="mainCard-tag">Advertising</div>
+                    </div>
+                    <div class="mainCard-info">
+                        <div class="mainCard-title">Banner Title</div>
+                        <div class="mainCard-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis accumsan
+                            erat, imperdiet condimentum est lacinia vel. Suspendisse in ligula purus.
+                        </div>
+                    </div>
+                </a>
+                <a href="#"  class="mainCard">
+                    <div class="mainCard-image">
+                        <img src="assets/images/cd_5.jpg" alt="">
+                        <div class="mainCard-tag">Advertising</div>
+                    </div>
+                    <div class="mainCard-info">
+                        <div class="mainCard-title">Banner Title</div>
+                        <div class="mainCard-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis accumsan
+                            erat, imperdiet condimentum est lacinia vel. Suspendisse in ligula purus.
+                        </div>
+                    </div>
+                </a>
+                <a href="#"  class="mainCard">
+                    <div class="mainCard-image">
+                        <img src="assets/images/cd_1.jpg" alt="">
+                        <div class="mainCard-tag">Advertising</div>
+                    </div>
+                    <div class="mainCard-info">
+                        <div class="mainCard-title">Banner Title</div>
+                        <div class="mainCard-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis accumsan
+                            erat, imperdiet condimentum est lacinia vel. Suspendisse in ligula purus.
+                        </div>
+                    </div>
+                </a>
+                <a href="#"  class="mainCard">
+                    <div class="mainCard-image">
+                        <img src="assets/images/cd_2.jpg" alt="">
+                        <div class="mainCard-tag">Advertising</div>
+                    </div>
+                    <div class="mainCard-info">
+                        <div class="mainCard-title">Banner Title</div>
+                        <div class="mainCard-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis accumsan
+                            erat, imperdiet condimentum est lacinia vel. Suspendisse in ligula purus.
+                        </div>
+                    </div>
+                </a>
+            </div>    </div>
+    </div>
+    
+    
+
+    <footer class="text-white xl:mt-[80px] lg:mt-[64px] md:mt-[48px] mt-[32px]">
+        <div class="bg-[#0C2536]">
+            <div class="container">
+                <div class="grid lg:grid-cols-3 grid-cols-2  xl:gap-[160px] gap-x-[80px] sm:gap-y-[40px] gap-y-[32px] footer  text-base-content sm:py-10 py-[20px]">
+                    <nav class="col-span-2 sm:col-span-1">
+                        <h6 class="footer-title">Services Areas</h6>
+                        <a class="link link-hover">Dry Dock / Shipyard</a>
+                        <a class="link link-hover">Diving services</a>
+                        <a class="link link-hover">Chandler / Provisions / Oil</a>
+                        <a class="link link-hover">Agent</a>
+                        <a class="link link-hover">Equipment/Repair</a>
+                    </nav>
+                    <nav class="col-span-2 sm:col-span-1">
+                        <h6 class="footer-title">Useful Pages</h6>
+                        <a class="link link-hover">About Us</a>
+                        <a class="link link-hover">Services</a>
+                        <a class="link link-hover">Countries</a>
+                        <a class="link link-hover">Contact</a>
+                        <a class="link link-hover">FQAs</a>
+                        <a class="link link-hover">Place an advertisement</a>
+                    </nav>
+                    <nav class="col-span-2 lg:col-span-1">
+                        <h6 class="footer-title">Office Contact</h6>
+                        <div class="text-white md:text-[16px] text-[14px] leading-[1.375]">
+                            Smart Marine Services S.R.L.
+                            Calle Anibal Gonzalez 4, 2 Izq.
+                            Sevilla, 41006, Spain
+                            N.I.F.: B70926530
+                        </div>
+                        <div class="text-white md:text-[16px] text-[14px]">
+                            E-mail: <a href="mailto:info@portcontact.com">info@portcontact.com</a>
+                        </div>
+                        
+                        <div class="flex items-center gap-[13px] mt-[12px]">
+                            <a class="btn-icon" href="#"><img src="assets/images/icons/socials/x.svg" alt=""></a>
+                            <a class="btn-icon" href="#"><img src="assets/images/icons/socials/f.svg" alt=""></a>
+                            <a class="btn-icon" href="#"><img src="assets/images/icons/socials/youtube.svg" alt=""></a>
+                            <a class="btn-icon" href="#"><img src="assets/images/icons/socials/inst.svg" alt=""></a>
+                            <a class="btn-icon" href="#"><img src="assets/images/icons/socials/in.svg" alt=""></a>
+                        </div>
+    
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#072031]">
+            <div class="container">
+                <div class="sm:grid sm:grid-cols-2 items-center sm:gap-[20px] gap-[0px] justify-between footer w-full sm:py-[24px] py-[16px] text-base-content ">
+                    <aside class="items-center">
+                        <p class="text-white md:text-[16px] text-[14px]">
+                            © Port Contact, All Right Reserved.
+                        </p>
+                    </aside>
+                    <nav class="flex items-center gap-[24px] justify-end ">
+                        <a class="link link-hover">Terms of use</a>
+                        <a class="link link-hover">Privacy policy</a>
+                        <a class="link link-hover">Cookies</a>
+                        <a class="link link-hover">Help</a>
+                    </nav>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+    <dialog id="sendMessage" class="modal">
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    
+        <div class="modal-box">
+            <form method="dialog" class="modal-close">
+                <button><img src="assets/images/icons/close.svg" alt=""></button>
+            </form>
+    
+            <h2 class="text-center">Specify your request
+                <br/>or <span class="text-blue">send email</span> to us!
+            </h2>
+            <div class="space-y-[12px]">
+                <div>
+                    <label class="block mb-1">Your Name</label>
+                    <input
+                            type="text"
+                            class="input input-bordered  w-full"/>
+                </div>
+                <div>
+                    <label class="block mb-1">Company Name</label>
+                    <input
+                            type="text"
+                            class="input input-bordered  w-full"/>
+                </div>
+                <div>
+                    <label class="block mb-1">E-mail*</label>
+                    <input
+                            type="text"
+                            class="input input-bordered  w-full"/>
+                </div>
+                <div>
+                    <label class="block mb-1">Vessel name (will remain undisclosed to Contractors)</label>
+                    <input
+                            type="text"
+                            class="input input-bordered  w-full"/>
+                </div>
+                <div class="">
+                    <label class="block mb-1">Description of the task</label>
+                    <textarea class="textarea min-h-[132px] textarea-bordered w-full"></textarea>
+                </div>
+                <div class="flex items-center gap-[16px]">
+                    <input
+                            type="text"
+                            placeholder="Enter code displayed"
+                            class="input input-bordered  w-full grow"/>
+                    <div class="w-[100px] h-[44px] bg-gray-300 rounded-[8px]"></div>
+                </div>
+                <button class="btn btn-primary mt-[24px] w-full"
+                        onclick="sendMessage.close();thanksForYourRequest.showModal()"
+                >Send Message
+                </button>
+            </div>
+        </div>
+    </dialog>
+    
+    <dialog id="thanksForYourRequest" class="modal">
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+        <div class="modal-box flex flex-col items-center text-center md:gap-[24px] gap-[12px]">
+            <form method="dialog" class="modal-close">
+                <button><img src="assets/images/icons/close.svg" alt=""></button>
+            </form>
+    
+            <div class="h2 text-center">Thank you for your request!</div>
+            <div class="">Our manager will contact you shortly</div>
+            <form method="dialog">
+                <button class="btn btn-primary min-w-[130px]">Ok</button>
+            </form>
+        </div>
+    </dialog>
+    
+    <dialog id="login" class="modal">
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+        <div class="modal-box">
+            <form method="dialog" class="modal-close">
+                <button><img src="assets/images/icons/close.svg" alt=""></button>
+            </form>
+    
+            <div class="h2 text-center">Sign In</div>
+            <div>
+                <label class="block mb-1">E-mail</label>
+                <input
+                        type="text"
+                        class="input input-bordered  w-full"/>
+            </div>
+            <div class="flex items-center mt-[16px] gap-[12px]">
+                <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                <div>
+                    I agree with <a href="#" class="text-blue">User Agreement</a> and <a href="#" class="text-blue">Privacy policy</a>
+                </div>
+            </div>
+    
+            <div class="grid grid-cols-2 gap-[16px] mt-[32px]">
+                <form method="dialog" class="w-full">
+                    <button class="btn btn-primary btn-outline w-full">Cancel</button>
+                </form>
+                <button class="btn btn-primary w-full" >Receive code</button>
+    <!--            <button class="btn btn-primary w-full" disabled="disabled">Receive code</button>-->
+            </div>
+        </div>
+    </dialog>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
