@@ -1,0 +1,21 @@
+.swiper-dots-line .swiper-pagination-bullet {
+    width: 40px;
+    background: #fff;
+    height: 2px;
+    margin: 0 6px
+}
+
+.swiper-dots-circle .swiper-pagination-bullet {
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid #e2e2e2;
+    opacity: 1;
+    height: 12px;
+    margin: 0 6px
+}
+
+.swiper-dots-circle .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border-color: transparent;
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity,1)))
+}
